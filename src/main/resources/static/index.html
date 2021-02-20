@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/user" method="get">
+    <input type="submit" value="get方法"/>
+</form>
+
+<form action="/user" method="post">
+    <input type="submit" value="post方法"/>
+</form>
+
+<form action="/user" method="post">
+    <input name="_m" type="hidden" value="PUT"/>
+    <input type="submit" value="Put方法"/>
+</form>
+
+<form action="/user" method="post"/>
+<input name="_method" type="hidden" value="DELETE"/>
+    <input type="submit" value="Detel方法">
+</form>
+<a href="/car/3/owner/lisi?age=18&inters=b&&inters=g">点击</a>
+<form action="/test/pet" method="post">
+    名字：<input type = "text" name ="name">
+    年龄：<input type = "text" name="age" >
+    <input type="submit" value="提交" >
+
+</form>
+<a href="/test/thpage">thymeleaf跳转</a>
+</body>
+</html>
